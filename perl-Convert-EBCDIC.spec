@@ -1,15 +1,13 @@
 %define upstream_name    Convert-EBCDIC
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.06
+Release:	7
 
 Summary:	Convert-EBCDIC module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Convert-EBCDIC
-Source0:	https://cpan.metacpan.org/authors/id/C/CX/CXL/Convert-EBCDIC-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CX/CXL/Convert-EBCDIC-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ converting a string from/to ASCII to/from EBCDIC, and two code pages
 ccsid819 and ccsid1047.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -45,9 +43,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.60.0-1mdv2011.0
 + Revision: 406919
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.06-5mdv2009.0
+- rebuild using %0.06 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.06-5mdv2009.0
 + Revision: 256133
 - rebuild
 
