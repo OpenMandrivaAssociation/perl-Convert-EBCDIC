@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:		perl-%{upstream_name}
 Version:	0.06
-Release:	2
+Release:	3
 
 Summary:	Convert-EBCDIC module for perl 
 License:	GPL+ or Artistic
